@@ -3,6 +3,3 @@
 =======
 # Startup -  Ptech fusion
 
-
-I
-
