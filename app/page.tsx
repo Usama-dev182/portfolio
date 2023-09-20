@@ -12,6 +12,10 @@ import SingleTestimonial from "@/components/Testimonials/SingleTestimonial";
 import Video from "@/components/Video";
 import WorkSlider from "@/components/Work slider/WorkSlider";
 import { Inter } from "@next/font/google";
+import Wework from "@/components/Wework/index";
+import UpdatedTestimonial from "@/components/UpdatedTestimonial/index";
+import FAQ from "@/components/FAQ/index";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +29,12 @@ export default function Home() {
       <Features />
       <Video />
       <AboutSectionTwo />
-      <Testimonials />
+      <Wework />
+      {/* <Testimonials /> */}
       <Pricing />
-      <WorkSlider />
+      <UpdatedTestimonial />
       <Blog />
+      <FAQ />
       <Contact />
     </>
   );

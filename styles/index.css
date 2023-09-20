@@ -3,7 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* SLICK CAROUSEL LINKS */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @layer base {
   body {
     font-family: "Inter", sans-serif;
@@ -55,4 +57,40 @@
   transition: transform .6s ease 0s;
   transform: perspective(3000px) rotateY(5deg);
   }
+  .position-linkedin {
+    right: 60px;
+    bottom: -57px;
+  }
+  
+  .bg-wework {
+    background-image: url('/images/wework/elipse.svg'), url('/images/wework/vector.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top right;
+  }
+  
+.bg-testimonial {
+  background-image: url('/images/wework/elipse.svg'), url('/images/testimonial/boy.svg'), url('/images/testimonial/girl.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 55%, 84% 26%, 12% 18%;
 }
+
+@media only screen and (max-width: 1400px) {
+  .bg-testimonial {
+    background-position: 80%, top right, top left;
+  }
+}
+.test-sha {
+  box-shadow: 0px 5px 10px rgba(89, 104, 118, 0.05);
+}
+.test-pos {
+  left: 42px;
+  top: 44px;
+}
+.faq-bg {
+  background-image: url('/images/faq/swirl.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: darkblue;
+}
+} 
