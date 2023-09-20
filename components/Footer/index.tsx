@@ -28,7 +28,7 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                <p className="mb-9 text-lg font-medium leading-relaxed text-body-color">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lobortis.
                 </p>
@@ -102,7 +102,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className=" mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       Blog{" "}
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       Pricing{" "}
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
@@ -139,7 +139,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       TOS{" "}
@@ -148,7 +148,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -157,7 +157,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -170,36 +170,28 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  {/* Support & Help */}
+                  Let's Chat
+
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
-                      Open Support Ticket{" "}
-                    </a>
+                      +92 301 833 1977                    </a>
                   </li>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-bold text-body-color hover:text-primary"
                     >
                       {" "}
-                      Terms of Use{" "}
-                    </a>
+                      yasir@ptechfusion.com                    </a>
                   </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      About{" "}
-                    </a>
-                  </li>
+               
                 </ul>
               </div>
             </div>
@@ -207,7 +199,7 @@ const Footer = () => {
         </div>
         <div className="bg-primary/10 py-8">
           <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p className="text-center text-medium text-lg  text-body-color text-black">
             ©2023. | Designed By: P-techfusion. | All rights reserved. 
                           </p>
           </div>

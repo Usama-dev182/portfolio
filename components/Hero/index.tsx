@@ -15,23 +15,24 @@ const Hero = () => {
                 className="wow fadeInUp  text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Software Development Consulting forEntrepreneurs
+                <h1 className="  mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                Software Development  
                 </h1>
+                <h3 className="mb-5 text-xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight ">Consulting for Entrepreneurs</h3>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="#"
+                    href="http://localhost:3000/about"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   🔥 Get Pro
+                   🔥 About Us
                   </Link>
                   <Link
-                    href="#"
+                    href="http://localhost:3000/contact"
                     className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
                   >
-                    Star on GitHub
+                    Contact Us
                   </Link>
                 </div>
               </div>

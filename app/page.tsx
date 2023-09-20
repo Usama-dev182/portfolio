@@ -8,7 +8,9 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
+import SingleTestimonial from "@/components/Testimonials/SingleTestimonial";
 import Video from "@/components/Video";
+import WorkSlider from "@/components/Work slider/WorkSlider";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +27,7 @@ export default function Home() {
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
+      <WorkSlider />
       <Blog />
       <Contact />
     </>
