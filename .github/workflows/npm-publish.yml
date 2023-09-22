@@ -24,7 +24,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: www.ptechfusion.com
+        server: www.dev.ptechfusion.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         local-dir: build/
