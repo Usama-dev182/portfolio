@@ -1,12 +1,13 @@
 const SectionTitle = ({
-  titleTop,
+ 
   title,
   paragraph,
   width = "570px",
   center,
   mb = "100px",
+  titleTop,
 }: {
-  titleTop: string;
+  titleTop?: string;
   title: string;
   paragraph: string;
   width?: string;

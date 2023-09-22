@@ -13,33 +13,33 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'App Interface Design ',
+        name: 'App Developed',
         imgSrc: '/images/wework/avatar.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Wallet Development',
+        name: 'Blockchain wallet cryptocurrency',
         imgSrc: '/images/wework/avatar3.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Smart Contracts',
+        name: 'Smart contracts crypto',
         imgSrc: '/images/wework/avatar4.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Tokenization',
+        name: 'Token making is the most accessible',
         imgSrc: '/images/wework/avatar.svg',
     },
     {
-        profession: 'Co-founder',
+        profession: 'NFT Marketplace        ',
         name: 'John Doe',
         imgSrc: '/images/wework/avatar3.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Gamification',
+        name: 'Blockchain technology',
         imgSrc: '/images/wework/avatar4.svg',
     },
 ]
@@ -99,9 +99,10 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">We work in several verticals.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">We work in several verticals.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">We work in several verticals.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">Best Work Showcase
+</h3>
+                        {/* <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">We work in several verticals.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">We work in several verticals.</h3> */}
                     </div>
 
                 </div>
