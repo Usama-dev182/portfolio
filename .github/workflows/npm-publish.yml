@@ -28,4 +28,4 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         local-dir: out/
-        server-dir: /dev.ptechfusion.com/server/app/
+        server-dir: /dev.ptechfusion.com/
