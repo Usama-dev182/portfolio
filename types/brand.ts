@@ -4,3 +4,11 @@ export type Brand = {
   href: string;
   image: string;
 };
+export type Porfolio = {
+  id: number;
+  href: string;
+  title: string;
+  description: string;
+  src: string;
+  url: string;
+}

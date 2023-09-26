@@ -15,18 +15,32 @@ const Hero = () => {
                 className="wow fadeInUp  text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="  mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <div className="typed">
+                  <h1  className="  mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight " aria-label="Hi! I'm a developer">
+                  Software&nbsp;<span className="typewriter"></span>
+                  </h1>
+
+                  <h1 className="mb-5 text-xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight line-1 anim-typewriter" aria-label="Hi! I'm a developer">
+                  Consulting&nbsp;<span className="typewriter thick"></span>
+                  </h1>
+
+                  {/* <h1 aria-label="Hi! I'm a developer">
+                    Hi! I'm a&nbsp;<span className="typewriter nocaret"></span>
+                  </h1> */}
+
+                  {/* <h1 className="  mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight hero_title">
                 Software Development  
-                </h1>
-                <h3 className="mb-5 text-xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight ">Consulting for Entrepreneurs</h3>
+                </h1> */}
+                  {/* <h1 className="mb-5 text-xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight line-1 anim-typewriter">Consulting for Entrepreneurs</h1> */}
+                </div>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it                 </p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="http://localhost:3000/about"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   🔥 About Us
+                    🔥 About Us
                   </Link>
                   <Link
                     href="http://localhost:3000/contact"
@@ -38,23 +52,23 @@ const Hero = () => {
               </div>
             </div>
             <div className="hero_call2">
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
-              >
-                <Image
-                  src="/images/hero/banner4-bg.png"
-                  alt="hero-image"
-                  fill
-                  className="mx-auto max-w-full lg:mr-0"
-                />
+              <div className="w-full px-4 lg:w-1/2">
+                <div
+                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                  data-wow-delay=".2s"
+                >
+                  <Image
+                    src="/images/hero/banner4-bg.png"
+                    alt="hero-image"
+                    fill
+                    className="mx-auto max-w-full lg:mr-0"
+                  />
+                </div>
               </div>
-            </div>    
-       </div>
+            </div>
           </div>
         </div>
-        
+
         <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"

@@ -11,14 +11,14 @@ import Testimonials from "@/components/Testimonials";
 import SingleTestimonial from "@/components/Testimonials/SingleTestimonial";
 import Video from "@/components/Video/index";
 // import { Inter } from "@next/font/google";
-// import WeWork from "@/components/Wework/index";
-// import UpdatedTestimonial from "@/components/UpdatedTestimonial/index";
+import WeWork from "@/components/Wework/index";
+import UpdatedTestimonial from "@/components/UpdatedTestimonial/index";
 // import FAQ from "@/components/FAQ/index";
 
 
 // const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({staticParam }) {
   return (
     <>
       <ScrollUp />
@@ -28,13 +28,26 @@ export default function Home() {
       <Features />
       {/* <Video /> */}
       <AboutSectionTwo />
-      {/* <WeWork /> */}
+      <WeWork />
       {/* <Testimonials /> */}
-      <Pricing />
-      {/* <UpdatedTestimonial /> */}
+      {/* <Pricing /> */}
+      <UpdatedTestimonial />
       <Blog />
       {/* <FAQ /> */}
       <Contact />
     </>
   );
+}
+
+// Define the static parameter using getStaticProps
+export async function getStaticProps() {
+  // Generate the static parameter
+  const staticParam = 'This is a static parameter';
+
+  // Return it as props
+  return {
+    props: {
+      staticParam,
+    },
+  };
 }
