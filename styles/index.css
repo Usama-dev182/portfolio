@@ -214,4 +214,47 @@
 
 
 
-} }
+} 
+
+@media only screen and (max-width: 574px) {
+  .hero_side_img {
+    margin-top: 3rem;
+}
+}
+
+@media only screen and (max-width: 600px ) {
+  .showcase_h3 {
+    font-size: 1.5rem !important;
+  }
+  .slider_title {
+    font-size: 16px !important;
+    padding: auto 10px;
+  }
+  .slider_des {
+    font-size: 16px !important;
+  }
+  #brand_custom {
+    display: block;
+    max-width: 96px;
+    margin: auto;
+}
+.brands_main {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 992px) {
+  .showcase_h3 {
+    font-size: 2rem !important;
+  }
+}
+
+
+
+select#department-selection {
+  /* width: 38rem; */
+  padding: 15px;
+}
+
+
+}

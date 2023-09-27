@@ -21,12 +21,12 @@ const Footer = () => {
                     height={30}
                   />
                   <Image
-                    src="images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
+                  src="/images/Logo-01.jpg"
+                  alt="logo"
+                  width={160}
+                  height={10}
+                  className="hidden  dark:block"
+                />
                 </Link>
                 <p className="mb-9 text-lg font-medium leading-relaxed text-body-color">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

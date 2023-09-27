@@ -16,37 +16,37 @@ const postData: DataType[] = [
     {
         profession: 'App Interface Design ',
         name: 'App Developed',
-        imgSrc: '/images/wework/avatar.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
     {
         profession: 'Wallet Development',
         name: 'Blockchain wallet cryptocurrency',
-        imgSrc: '/images/wework/avatar3.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
     {
         profession: 'Smart Contracts',
         name: 'Smart contracts crypto',
-        imgSrc: '/images/wework/avatar4.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
     {
         profession: 'Tokenization',
         name: 'Token making is the most accessible',
-        imgSrc: '/images/wework/avatar.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
     {
         profession: 'NFT Marketplace        ',
         name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
     {
         profession: 'Gamification',
         name: 'Blockchain technology',
-        imgSrc: '/images/wework/avatar4.svg',
+        imgSrc: '/images/blog/blog-details-02.jpg',
         url: '/blog-details',
     },
 ]
@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">Best Work Showcase
+                        <h3 className="text-4xl sm:text-6xl font-bold dark:text-white text-black my-2 showcase_h3">Best Work Showcase
 </h3>
                         {/* <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">We work in several verticals.</h3>
                         <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">We work in several verticals.</h3> */}
@@ -119,11 +119,11 @@ export default class MultipleItems extends Component {
                         <div key={i}>
                             <div className='bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl'>
                                 <div className='relative'>
-                                    <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block m-auto" />
+                                    <Image src={items.imgSrc} alt="gaby" width={280} height={182} className="inline-block m-auto" />
                                     {/* <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" /> */}
                                 </div>
-                               <a href={items.url}> <h4 className='text-4xl font-bold pt-14'>{items.name}</h4></a>  
-                                <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.profession}</h3>
+                               <a href={items.url}> <h4 className='text-4xl font-bold pt-14 dark:text-black leading-tight slider_title '>{items.name}</h4></a>  
+                                <h3 className='text-2xl font-normal dark:text-black leading-tight pt-4 pb-2 opacity-50 slider_des '>{items.profession}</h3>
                             </div>
                         </div>
                     ))}

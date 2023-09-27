@@ -9,7 +9,7 @@ const Hero = () => {
         className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
         <div className="container">
-          <div className="-mx-4 grid gap-2 grid-cols-2">
+          <div className="-mx-4 grid gap-2 lg:grid-cols-2 ">
             <div className=" px-4">
               <div
                 className="wow fadeInUp  text-center"
@@ -54,7 +54,7 @@ const Hero = () => {
             <div className="hero_call2">
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0 sm:mt-8 md:mt-0 lg:mt-0 hero_side_img"
                   data-wow-delay=".2s"
                 >
                   <Image
