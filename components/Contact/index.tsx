@@ -4,7 +4,15 @@ import NewsLatterBox from "./NewsLatterBox";
 import React, { useState } from 'react';
 import { Formik, Field } from "formik";
 import { useFormik } from "formik";
+import { SMTPClient } from 'emailjs';
+
 const Contact = () => {
+  // const client = new SMTPClient({
+  //   user: 'pteclwvn',
+  //   password: 'rPj4gyqObXAh',
+  //   host: 'ptechfusion.com',
+  //   ssl: true,
+  // });
   const [selectOption, setselectOption] = useState();
   const formik = useFormik({
     initialValues: {
@@ -15,7 +23,39 @@ const Contact = () => {
 
 
     },
-    onSubmit: values => {
+    onSubmit: async values => {
+
+      // const {visitor_name, visitor_email, visitor_message, concerned_department} = values;
+      try {
+        const response = await fetch("/app/api/SendEmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+  
+        if (response.ok) {
+          alert("Email sent successfully");
+        } else {
+          alert("Email sending failed");
+        }
+      } catch (error) {
+        console.error(error);
+      }
+      // const response = await fetch('/app/api/SendEmail', {
+      //   method: 'POST',
+      //   headers: {
+      //     'content-type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     visitor_name,
+      //     visitor_email,
+      //     visitor_message,
+      //     concerned_department,
+      //   })
+      // })
+      // console.log(await response.json())
       // handle form submission
       console.log(values, 'values ===>')
     },
@@ -23,6 +63,8 @@ const Contact = () => {
   const handleChange = (e) => {
     setselectOption(e.target.value)
   }
+  // send the message and get a callback with an error or details of the message that was sent
+
 
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">

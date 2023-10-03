@@ -13,7 +13,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true
   },
-  distDir: "build",
+  images: {
+    domains: ['dev.ptechfusion.com']
+  },
+
+  // distDir: "build",
   // exportPathMap: {
   //   '/': 'app/page.tsx',
   //   '/about': '/app/about/page.tsx',
@@ -26,6 +30,7 @@ const nextConfig = {
   //   '/signup': '/app/signup/page.tsx',
   // },
 
+  // output: 'export',
   output: 'export',
 
 };
