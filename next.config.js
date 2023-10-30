@@ -3,7 +3,6 @@ const nextConfig = {
   
 
   experimental: { 
-    concurrentFeatures: true,
     appDir: true,
   },
   eslint: {
