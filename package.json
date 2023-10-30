@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   
-  "homepage": "https://dev.ptechfusion.com/",
+  "homepage": "/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
