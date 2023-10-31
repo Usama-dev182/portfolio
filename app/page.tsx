@@ -39,15 +39,4 @@ export default function Home({staticParam }) {
   );
 }
 
-// Define the static parameter using getStaticProps
-export async function getStaticProps() {
-  // Generate the static parameter
-  const staticParam = 'This is a static parameter';
 
-  // Return it as props
-  return {
-    props: {
-      staticParam,
-    },
-  };
-}
