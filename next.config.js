@@ -31,7 +31,6 @@ const nextConfig = {
   // },
 
   // output: 'export',
-  output: 'export',
 
 };
 
