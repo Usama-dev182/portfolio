@@ -11,7 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import SingleTestimonial from "@/components/Testimonials/SingleTestimonial";
 import Video from "@/components/Video/index";
 // import { Inter } from "@next/font/google";
-import WeWork from "@/components/Wework/index";
+// import WeWork from "@/components/Wework/index";
 import UpdatedTestimonial from "@/components/UpdatedTestimonial/index";
 // import FAQ from "@/components/FAQ/index";
 
@@ -28,7 +28,7 @@ export default function Home({staticParam }) {
       <Features />
       {/* <Video /> */}
       <AboutSectionTwo />
-      <WeWork />
+      {/* <WeWork /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
       <UpdatedTestimonial />
