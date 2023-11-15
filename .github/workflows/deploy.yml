@@ -33,6 +33,6 @@ jobs:
         server: www.dev.ptechfusion.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-      
+        server-dir: /dev.ptechfusion.com/
 
      
