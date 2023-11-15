@@ -1,0 +1,38 @@
+on: 
+    push:
+        branches:
+            - master
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Set CI to false
+      run: |
+        echo "CI=false" >> $GITHUB_ENV
+    
+    - name: 🔨 Build Project 
+      run: |
+          npm install
+          npm run build
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: www.dev.ptechfusion.com
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: build/
+        server-dir: /dev.ptechfusion.com/
+
+     
