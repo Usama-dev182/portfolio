@@ -32,7 +32,7 @@ jobs:
         server: www.dev.ptechfusion.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        local-dir: build/
+        local-dir: next/
         server-dir: /dev.ptechfusion.com/
 
      
