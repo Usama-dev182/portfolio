@@ -16,15 +16,16 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
+    
 
     - name: Set CI to false
       run: |
         echo "CI=false" >> $GITHUB_ENV
-    
-    - name: 🔨 Build Project 
+
+    - name: Install dependencies and build Next.js app
       run: |
-          npm install
-          npm run build
+          yarn install  # Install project dependencies
+          yarn build  # Build Next.js app
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -32,7 +33,7 @@ jobs:
         server: www.dev.ptechfusion.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        local-dir: build/
+        local-dir: .next/
         server-dir: /dev.ptechfusion.com/
 
      
