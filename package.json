@@ -2,11 +2,11 @@
   "name": "startup-nextjs-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost:3000/",
+  "homepage": "https://test.ptechfusion.com",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "node app.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production node app.js",
     "lint": "next lint"
   },
   "dependencies": {
