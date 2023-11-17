@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://test.ptechfusion.com",
   "scripts": {
-    "dev": "node app.js",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node app.js",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
