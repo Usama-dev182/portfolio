@@ -25,7 +25,8 @@ jobs:
     - name: Install dependencies and build Next.js app
       run: |
           yarn install  # Install project dependencies
-          yarn build  # Build Next.js app  
+          yarn build  # Build Next.js app
+          yarn start  
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
