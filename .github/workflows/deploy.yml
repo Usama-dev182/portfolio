@@ -1,40 +1,38 @@
-on: 
-    push:
-        branches:
-            - main
+on:
+  push:
+    branches:
+      - main
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
-      
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.18.0
-    
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.18.0
 
-    - name: Set CI to false
-      run: |
-        echo "CI=false" >> $GITHUB_ENV
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV
 
-    - name: Install dependencies and build Next.js app
-      run: |
+      - name: Install dependencies and build Next.js app
+        run: |
           npm install  # Install project dependencies
           npm run build  # Build Next.js app
-          npm run start  
+          npm run start
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: www.dev.ptechfusion.com
-        username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
-        local-dir: .next/
-        server-dir: /dev.ptechfusion.com/
-
-     
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: www.dev.ptechfusion.com
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: .next/  # Adjust if .next is in a different location
+          server-dir: /dev.ptechfusion.com/
