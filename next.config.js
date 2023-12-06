@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   
-  externalDir: true | {
-    enabled: true,
-    silent: true,
-},
+  
   // experimental: { 
   //   appDir: true,
   // },
