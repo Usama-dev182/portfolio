@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   
-  
+  basePath: '/dev.ptechfusion.com',
+  assetPrefix: '/dev.ptechfusion.com/',
   experimental: { 
     appDir: true,
   },
