@@ -26,7 +26,7 @@ jobs:
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: www.dev.ptechfusion.com
+          server: www.newdev.ptechfusion.com
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           local-dir: .next/  # Update if .next is in a different location
